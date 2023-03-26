@@ -1,0 +1,612 @@
+.navbar-top {
+    background-color: #262626;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navbar-top .top-left > a > img {
+    width: 55%;
+    padding: 4px;
+  }
+  .navbar-top .top-right {
+    padding: 0px 4px;
+  }
+  .navbar-top .btn {
+    background-color: #7AA93B;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px 15px;
+  }
+  .navbar-top .top-right {
+    margin-left: auto;
+    padding: 0px 9px;
+  }
+  
+  .main {
+    z-index: -1;
+  }
+  
+  .navbar-top {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .navbar-bottom {
+    top: 55px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .travel {
+    padding-top: 150px;
+  }
+  
+  .navbar-bottom .navbar-brand > img {
+    width: 100%;
+    height: 47px;
+    margin-top: 3px;
+  }
+  .navbar-bottom ul > li > a > span {
+    transition: 0.4s;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0px 5px;
+    color: black;
+  }
+  .navbar-bottom ul > li > a > span:hover {
+    color: #6168FF;
+  }
+  .navbar-bottom .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .navbar-bottom .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+  .navbar-bottom .change > span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .navbar-bottom .change > span {
+    transition: 0.6s;
+  }
+  .navbar-bottom .change > span:hover {
+    color: #6168FF;
+  }
+  .navbar-bottom .dropdown-menu > li > a {
+    transition: 0.6s;
+  }
+  .navbar-bottom .dropdown-menu > li > a:hover {
+    background-color: #6168FF;
+    color: white;
+  }
+  .navbar-bottom .navbar-toggler {
+    color: #6168FF;
+  }
+  
+  .navbar {
+    background-color: #fff;
+  }
+  
+  .bg-image {
+    height: 600px;
+    background-image: url(/assets/imgfolder/TravelImg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .text-top {
+    color: #ffffff;
+    padding-top: 5rem;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .textcenter {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 4rem;
+  }
+  
+  .image-button {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
+  .btn-change {
+    background-color: #6168FF;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s;
+  }
+  
+  .btn-change:hover {
+    background-color: transparent;
+    border: 1px solid;
+    color: white;
+  }
+  
+  .gearicon {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #6168FF;
+    position: absolute;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 15rem;
+  }
+  @media (max-width: 576px) {
+    .gearicon {
+      display: none;
+    }
+  }
+  
+  .icon > i {
+    color: white;
+    font-size: 28px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .card {
+    border: none;
+  }
+  
+  .card-header {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .card-header > i {
+    font-size: 35px;
+  }
+  
+  .fa-child-reaching {
+    color: #6168FF;
+  }
+  
+  .fa-location-dot {
+    color: #6168FF;
+  }
+  
+  .fa-star {
+    color: #6168FF;
+  }
+  
+  .natureimg {
+    background-image: url(https://getmasum.com/html-preview/nour/assets/img/choose.jpg);
+    height: 380px;
+    background-size: 500px;
+    background-size: cover;
+    box-shadow: 4px 0px 14px;
+    position: relative;
+  }
+  
+  .ichange {
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #6168FF;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card2 {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 27rem;
+    padding: 7px 10px;
+  }
+  .card2 .card-img-top {
+    width: 100%;
+    height: 350px;
+  }
+  .card2 .card-text {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .card2 .card-block {
+    border: 1px solid rgb(222, 220, 220);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 11px;
+  }
+  .card2 .card-text > span {
+    font-size: 15px;
+    color: rgb(196, 195, 195);
+    font-family: sans-serif;
+  }
+  
+  .i {
+    font-size: 44px;
+    padding-left: 15px;
+  }
+  
+  .i2 {
+    font-size: 44px;
+    padding-left: 50px;
+  }
+  
+  .s {
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 5px;
+    background-color: #F4F9FF;
+  }
+  
+  .t :first-child {
+    font-weight: 500;
+    color: #141313;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  
+  .textdivz > h2 {
+    position: relative;
+  }
+  .textdivz > h2::before {
+    content: "DESTINATIONS";
+    z-index: -1;
+    position: absolute;
+    left: 32%;
+    top: -40px;
+    font-size: 70px;
+    opacity: 0.1;
+  }
+  
+  .textdivz2 > h2 {
+    position: relative;
+  }
+  .textdivz2 > h2::before {
+    content: "SERVICES";
+    z-index: -1;
+    position: absolute;
+    left: 34%;
+    top: -45px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .textdivz3 > h2 {
+    position: relative;
+  }
+  .textdivz3 > h2::before {
+    content: "GALLERY";
+    z-index: -1;
+    position: absolute;
+    left: 36%;
+    top: -43px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #gallery {
+    padding-bottom: 100px;
+  }
+  #gallery .eifel {
+    position: relative;
+  }
+  #gallery .eifel img {
+    width: 100%;
+  }
+  #gallery .eifel::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6168FF;
+    opacity: 0;
+  }
+  #gallery .eifel:hover:before {
+    opacity: 0.7;
+  }
+  #gallery .eifel:hover h3 {
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: 1s;
+  }
+  #gallery .eifel h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+  }
+  
+  .photoshared {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .textdivz4 > h2 {
+    position: relative;
+  }
+  .textdivz4 > h2::before {
+    content: "PACKAGE";
+    z-index: -1;
+    position: absolute;
+    left: 35.5%;
+    top: -43px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .Travel-Ticket .card-body {
+    border: 1px solid rgb(230, 228, 228);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .Travel-Ticket .card-body .btn {
+    position: absolute;
+    top: -27px;
+    right: 14px;
+    border-radius: 39px;
+    background-color: #6168FF;
+    font-size: 20px;
+  }
+  .Travel-Ticket .btn > span {
+    padding: 12px;
+    font-size: 17px;
+  }
+  .Travel-Ticket .card:hover .btn {
+    transition: 0.5;
+    background-color: #262626;
+    border: 1px solid #262626;
+  }
+  
+  .card-text > i {
+    color: gold;
+    font-size: 15px;
+  }
+  
+  .location {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .partner {
+    z-index: -1;
+  }
+  .partner .imagediv {
+    background-image: url(https://getmasum.com/html-preview/nour/assets/img/bg/client-bg.png);
+    position: relative;
+    padding: 50px 30px;
+    background-color: #6168FF;
+  }
+  .partner .box > img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .textdivz5 > h2 {
+    position: relative;
+  }
+  .textdivz5 > h2::before {
+    content: "TESTIMONIALS";
+    z-index: -1;
+    position: absolute;
+    left: 27.5%;
+    top: -43px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .customers .card {
+    background-color: #F4F9FF;
+    padding: 20px;
+  }
+  .customers img {
+    border-radius: 90px;
+    width: 25%;
+  }
+  .customers .cardtext > :first-child {
+    padding: 30px 6px;
+    font-family: sans-serif;
+  }
+  
+  .textdivz6 > h2 {
+    position: relative;
+  }
+  .textdivz6 > h2::before {
+    content: "BLOG";
+    z-index: -1;
+    position: absolute;
+    left: 41%;
+    top: -43px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .blog .card-body {
+    border: 1px solid rgb(225, 224, 224);
+    padding: 30px;
+  }
+  .blog .text {
+    font-weight: 600;
+    padding-right: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .blog .text2 {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .textdivz7 > h2 {
+    position: relative;
+  }
+  .textdivz7 > h2::before {
+    content: "CONTACT";
+    z-index: -1;
+    position: absolute;
+    left: 35%;
+    top: -43px;
+    font-size: 80px;
+    opacity: 0.1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #register .registerlabel {
+    background-color: #F4F9FF;
+    width: 55%;
+    padding: 33px 5px;
+  }
+  #register .registerlabel .textinput {
+    padding: 10px 23px;
+    border: none;
+    border-radius: 5px;
+  }
+  #register .registerlabel .textinput:focus {
+    outline: 1px solid #6168FF;
+  }
+  #register .registerlabel .emailinput {
+    padding: 10px 23px;
+    border: none;
+    border-radius: 5px;
+  }
+  #register .registerlabel .emailinput:focus {
+    outline: 1px solid #6168FF;
+  }
+  #register .registerlabel .numberinput {
+    padding: 10px 23px;
+    border: none;
+    border-radius: 5px;
+  }
+  #register .registerlabel .numberinput:focus {
+    outline: 1px solid #6168FF;
+  }
+  #register .registerlabel .subjecttext {
+    padding: 10px 20px;
+    width: 99.6%;
+    border: none;
+    border-radius: 5px;
+  }
+  #register .registerlabel .subjecttext:focus {
+    outline: 1px solid #6168FF;
+  }
+  #register .registerlabel .textarea {
+    width: 99.6%;
+    padding: 140px 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border: none;
+    border-radius: 5px;
+  }
+  #register .registerlabel .textarea:focus {
+    outline: 1px solid #6168FF;
+  }
+  #register .button {
+    border: none;
+    border-radius: 5px;
+    background-color: #6168FF;
+  }
+  #register .button span {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+  
+  footer .footer {
+    padding: 280px 0 40px;
+    background-color: #00102A;
+    color: #fff;
+    -webkit-clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 250px, 100% 0, 100% 100%, 0% 100%);
+  }
+  footer .footer .logopart {
+    margin-bottom: 20px;
+  }
+  footer .logopart > img {
+    width: 50%;
+    padding-top: 20px;
+  }
+  footer .footerpart1 {
+    padding-left: 12px;
+    padding-top: 20px;
+  }
+  footer .footerpart1 a {
+    text-decoration: none;
+    color: #fff;
+  }
+  footer .footertext :nth-child(1) {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  footer .footertext {
+    padding: 35px 0px;
+  }
+  footer .footertext a {
+    text-decoration: none;
+    color: rgb(231, 230, 230);
+    font-size: 14px;
+  }
+  footer .footertext a:hover {
+    color: #6168FF;
+    transition: 0.5s;
+  }
+  footer .subscribefooter {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 10px;
+  }
+  footer .btn {
+    padding: 18px 40px;
+    color: rgb(231, 230, 230);
+    border: none;
+    background-color: #6168FF;
+  }
+  footer .btn .btn > span {
+    padding: 5px;
+    font-family: sans-serif;
+  }
+  footer .btn:hover {
+    background-color: #fff;
+    color: #141313;
+  }
+  
+  .borderbottom {
+    border-bottom: 1px solid rgb(108, 107, 107);
+  }
+  
+  .links a {
+    margin: 0px 10px;
+    padding-left: 10px;
+  }
